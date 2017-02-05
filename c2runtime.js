@@ -20634,11 +20634,11 @@ cr.behaviors.Platform = function(runtime)
 cr.getObjectRefTable = function () { return [
 	cr.plugins_.Button,
 	cr.plugins_.Browser,
-	cr.plugins_.TiledBg,
 	cr.plugins_.Touch,
-	cr.plugins_.WebStorage,
 	cr.plugins_.Sprite,
+	cr.plugins_.TiledBg,
 	cr.plugins_.Text,
+	cr.plugins_.WebStorage,
 	cr.behaviors.Platform,
 	cr.system_object.prototype.cnds.IsGroupActive,
 	cr.system_object.prototype.cnds.OnLayoutStart,
@@ -20674,5 +20674,6 @@ cr.getObjectRefTable = function () { return [
 	cr.system_object.prototype.exps.random,
 	cr.plugins_.Sprite.prototype.exps.Y,
 	cr.plugins_.Text.prototype.acts.MoveToTop,
-	cr.plugins_.Button.prototype.cnds.OnClicked
+	cr.plugins_.Button.prototype.cnds.OnClicked,
+	cr.plugins_.Browser.prototype.acts.GoToURLWindow
 ];};
